@@ -49,10 +49,10 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
      adapter: 'sails-mysql',
-     url: 'mysql://root:@localhost:3306/procureline-live',
+     url: 'mysql://procurenodejswebapp:Suite@284907@127.0.0.1:51293/localdb',
 //     url: 'mysql://sadminprocurelinemobileapp@procurelinemobileapp:Suite@2849@procurelinemobileapp.database.windows.net:1443/procurelinemobileappdb',
 
-  },
+  }, 
 
 
 };
