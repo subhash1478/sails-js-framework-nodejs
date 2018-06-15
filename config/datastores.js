@@ -12,7 +12,7 @@
  * For more information on configuring datastores, check out:
  * https://sailsjs.com/config/datastores
  */
-
+ 
 module.exports.datastores = {
 
 
@@ -48,8 +48,9 @@ module.exports.datastores = {
     *    (See https://sailsjs.com/config/datastores for help.)                 *
     *                                                                          *
     ***************************************************************************/
-    // adapter: 'sails-mysql',
-    // url: 'mysql://user:password@host:port/database',
+     adapter: 'sails-mysql',
+     url: 'mysql://root:@localhost:3306/procureline-live',
+//     url: 'mysql://sadminprocurelinemobileapp@procurelinemobileapp:Suite@2849@procurelinemobileapp.database.windows.net:1443/procurelinemobileappdb',
 
   },
 

@@ -28,14 +28,19 @@ module.exports.security = {
   *                                                                          *
   ***************************************************************************/
 
-  // cors: {
-  //   allRoutes: false,
-  //   allowOrigins: '*',
-  //   allowCredentials: false,
-  // },
+  cors: {
+    allRoutes: true,
+ 
+    allowOrigins: '*',
+    headers: 'Content-Type, Authorization, X-Requested-With, Cache-Control, Accept, Origin, X-Session-ID,Access-Control-Allow-Origin',
+    allowCredentials: true,
+    allowAnyOriginWithCredentialsUnsafe:true,
+    allowRequestHeaders:'content-type',
+    allowRequestMethods:'GET, HEAD, PUT, PATCH, POST, DELETE',
+    allowResponseHeaders:''
+  },
 
-
-  /****************************************************************************
+   /****************************************************************************
   *                                                                           *
   * By default, Sails' built-in CSRF protection is disabled to facilitate     *
   * rapid development.  But be warned!  If your Sails app will be accessed by *
@@ -49,6 +54,6 @@ module.exports.security = {
   *                                                                           *
   ****************************************************************************/
 
-  // csrf: false
+  // csrf: true
 
 };

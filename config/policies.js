@@ -16,7 +16,19 @@ module.exports.policies = {
   * (`true` allows public access)                                            *
   *                                                                          *
   ***************************************************************************/
+ '*': ['isAuthorized'],
 
-  // '*': true,
-
+   
+    'UsersController': {
+     'login': true,
+     'resetpassword':true,
+     'checkOtp':true
+    },
+ 
+    'EmployeeMasterController': {
+      'forgetPassword': true,
+      
+      
+     }
+  
 };
