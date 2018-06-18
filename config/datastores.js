@@ -12,7 +12,22 @@
  * For more information on configuring datastores, check out:
  * https://sailsjs.com/config/datastores
  */
+  
+var connection={
+  USERID:'sadmin@procurelineserver',
+  PASSWORD:'Suite@209',
+  HOST:'procurelineserver.mysql.database.azure.com',
+  DATABASE:'procureline'
+ };
  
+ 
+  
+//  var connection={
+//   USERID:'root',
+//   PASSWORD:'',
+//   HOST:'localhost',
+//   DATABASE:'procureline-live'
+//  };
 module.exports.datastores = {
 
 
@@ -49,10 +64,11 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
      adapter: 'sails-mysql',
-     url: 'mysql://procurenodejswebapp:Suite@284907@127.0.0.1:51293/localdb',
-//     url: 'mysql://sadminprocurelinemobileapp@procurelinemobileapp:Suite@2849@procurelinemobileapp.database.windows.net:1443/procurelinemobileappdb',
+     url:`mysql2://${connection.USERID}:${connection.PASSWORD}@${connection.HOST}/${connection.DATABASE}`,    
+connectTimeout: 20000,
+insecureAuth:true 
 
-  }, 
+  },
 
 
 };

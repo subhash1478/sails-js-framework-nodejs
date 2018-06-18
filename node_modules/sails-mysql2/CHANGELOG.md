@@ -1,0 +1,1 @@
+# Sails MySQL2 Changelog

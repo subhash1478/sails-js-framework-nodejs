@@ -1,0 +1,19 @@
+data connection
+username:procurenodejswebapp
+password:Suite@525
+
+
+
+Data Source=tcp:procurenodejswebapp.database.windows.net,1433;Initial C
+
+Data Source=tcp:procurenodejswebapp.database.windows.net,1433;Initial Catalog=procurenodejswebapp;User ID=procurenodejswebapp;Password=Suite@525
+
+525
+
+
+Database=localdb;Data Source=procurenodejswebapp.scm.azurewebsites.net;User Id=procurenodejswebapp;Password=Suite@525
+
+
+Database=staging;Data Source=procurelineserver.mysql.database.azure.com;User Id=sadmin@procurelineserver;Password=Suite@209;
+
+bHKXuPFG1sSx4cQY
