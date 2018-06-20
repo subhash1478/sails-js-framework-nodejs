@@ -65,7 +65,7 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
       adapter: 'sails-mysql',
-     url:`mysql://${connection.USERID}:${connection.PASSWORD}@${connection.HOST}/3306${connection.DATABASE}`,    connectTimeout:20000,
+     url:`mysql://${connection.USERID}:${connection.PASSWORD}@${connection.HOST}:3306/${connection.DATABASE}`,    connectTimeout:20000,
 // //url: 'mysql://root:@localhost:3306/procureline-live',
   insecureAuth:true,
 
