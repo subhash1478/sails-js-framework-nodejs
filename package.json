@@ -11,13 +11,15 @@
     "async": "2.0.1",
     "grunt": "1.0.1",
     "jsonwebtoken": "^8.3.0",
+    "machinepack-azure": "^1.2.5",
     "md5": "^2.2.1",
     "sails": "^1.0.2",
     "sails-hook-grunt": "^3.0.2",
     "sails-hook-orm": "^2.0.0-16",
     "sails-hook-sockets": "^1.4.0",
     "sails-mysql": "^1.0.0",
-    "sails-mysql2": "^0.9.32"
+    "sails-mysql2": "^0.9.32",
+    "sails-postgresql": "^1.0.1"
   },
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3"

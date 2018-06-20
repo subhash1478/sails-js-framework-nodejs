@@ -14,10 +14,10 @@
  */
   
 var connection={
-  USERID:'sadmin@procurelineserver',
-  PASSWORD:'Suite@209',
-  HOST:'procurelineserver.mysql.database.azure.com',
-  DATABASE:'procureline'
+  USERID:'nodejsapp@procurenodejs',
+  PASSWORD:'Suite@1702',
+  HOST:'procurenodejs.mysql.database.azure.com',
+  DATABASE:'staging'
  };
  
  
@@ -28,6 +28,7 @@ var connection={
 //   HOST:'localhost',
 //   DATABASE:'procureline-live'
 //  };
+ 
 module.exports.datastores = {
 
 
@@ -48,7 +49,7 @@ module.exports.datastores = {
   ***************************************************************************/
 
   default: {
-
+     
     /***************************************************************************
     *                                                                          *
     * Want to use a different database during development?                     *
@@ -63,12 +64,12 @@ module.exports.datastores = {
     *    (See https://sailsjs.com/config/datastores for help.)                 *
     *                                                                          *
     ***************************************************************************/
-     adapter: 'sails-mysql',
-     url:`mysql2://${connection.USERID}:${connection.PASSWORD}@${connection.HOST}/${connection.DATABASE}`,    
-connectTimeout: 20000,
-insecureAuth:true 
+      adapter: 'sails-mysql',
+     url:`mysql://${connection.USERID}:${connection.PASSWORD}@${connection.HOST}/${connection.DATABASE}`,    connectTimeout:20000,
+// //url: 'mysql://root:@localhost:3306/procureline-live',
+  insecureAuth:true,
 
   },
 
-
+  
 };

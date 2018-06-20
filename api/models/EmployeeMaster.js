@@ -1,5 +1,7 @@
 module.exports = {
   tableName: 'vms_employee_master',
+  datastore: 'default',
+
   primaryKey:'id',
   attributes: {
     id:{type:'number', autoIncrement: true,columnName:'employee_id'

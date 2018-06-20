@@ -32,7 +32,7 @@ module.exports.security = {
     allRoutes: true,
  
     allowOrigins: '*',
-    headers: 'Content-Type, Authorization, X-Requested-With, Cache-Control, Accept, Origin, X-Session-ID,Access-Control-Allow-Origin',
+    allowRequestHeaders: 'Content-Type, Authorization, X-Requested-With, Cache-Control, Accept, Origin, X-Session-ID,Access-Control-Allow-Origin',
     allowCredentials: true,
     allowAnyOriginWithCredentialsUnsafe:true,
     allowRequestHeaders:'content-type',
@@ -40,6 +40,7 @@ module.exports.security = {
     allowResponseHeaders:''
   },
 
+  
    /****************************************************************************
   *                                                                           *
   * By default, Sails' built-in CSRF protection is disabled to facilitate     *
