@@ -14,10 +14,10 @@
  */
   
 var connection={
-  USERID:'nodejsapp@procurenodejs',
-  PASSWORD:'Suite@1702',
-  HOST:'procurenodejs.mysql.database.azure.com',
-  DATABASE:'staging'
+  USERID:'sql12243777',
+  PASSWORD:'yQQSbt6uNt',
+  HOST:'sql12.freesqldatabase.com',
+  DATABASE:'sql12243777'
  };
  
  
@@ -65,7 +65,7 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
       adapter: 'sails-mysql',
-     url:`mysql://${connection.USERID}:${connection.PASSWORD}@${connection.HOST}/${connection.DATABASE}`,    connectTimeout:20000,
+     url:`mysql://${connection.USERID}:${connection.PASSWORD}@${connection.HOST}/3306${connection.DATABASE}`,    connectTimeout:20000,
 // //url: 'mysql://root:@localhost:3306/procureline-live',
   insecureAuth:true,
 
