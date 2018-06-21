@@ -24,6 +24,7 @@ module.exports = {
                      if(response){
                         newval['doc_details']= item;
                         newval['userfiles']= response;
+                        newval['file']= `${sails.config.custom.webapiurl}/uploads/${item.file}`;
                      }else{
                         newval['doc_details']= item;
                         newval['userfiles']= null;
