@@ -1,8 +1,7 @@
 module.exports = {
   tableName: 'vms_employee_login_details',
-  datastore: 'default',
-
-   attributes: {
+  datastores:'mysql',
+  attributes: {
      
     admin_id:{type:'number',required:true},
     vendor_id:{type:'number',required:true},

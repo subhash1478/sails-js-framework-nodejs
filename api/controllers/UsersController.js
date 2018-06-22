@@ -13,8 +13,13 @@ module.exports = {
         if(!request_data.email || !request_data.password){
             return ResponseService.json(400 , res, "please enter email and password")
         }
+        sails.log(Users);
+
         await Users.findOne({consultant_email:request_data.email,password:md5(request_data.password)})
         .then(function (user){
+
+            console.log(user);
+            
             if(!user) {
                 return ResponseService.json(400  , res, "Invalid email or password")
             }

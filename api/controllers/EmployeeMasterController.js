@@ -1,5 +1,35 @@
  module.exports = {
     //
+    // ────────────────────────────────────────────────────────── I ──────────
+    //   :::::: E M A I L  L I S T : :  :   :    :     :        :          :
+    // ────────────────────────────────────────────────────────────────────
+    //
+
+    
+
+
+    async emailList(req,res){
+          await EmployeeMaster.find({}) 
+        .then(function (user){
+            return ResponseService.json(200, res, "record fetched", user)
+        })
+        .catch(function(err){
+            sails.log.debug(`Some error occured  ${err}`);
+            // return ResponseService.json(500, res, err)
+        });
+    },
+
+
+
+
+
+
+
+
+
+
+
+    //
     // ──────────────────────────────────────────────────────────────────────── I ──────────
     //   :::::: G E T   U S E R   D E T A I L S : :  :   :    :     :        :          :
     // ──────────────────────────────────────────────────────────────────────────────────
@@ -7,6 +37,7 @@
 
     
     async getUser(req,res){
+        console.log(req.current_user)
         var loggedUserId=req.current_user.id
         await EmployeeMaster.findOne({id:loggedUserId}) 
         .then(function (user){

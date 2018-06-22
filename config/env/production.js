@@ -359,7 +359,10 @@ module.exports = {
   *                                                                         *
   **************************************************************************/
   // ssl: undefined,
-
+  ssl: {
+    ca: require('fs').readFileSync(require('path').resolve(__dirname,'BaltimoreCyberTrustRoot.crt.pem')),
+   
+  },
 
 
   /**************************************************************************

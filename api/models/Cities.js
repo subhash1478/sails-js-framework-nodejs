@@ -1,6 +1,9 @@
  
 module.exports = {
   tableName: 'cities',
+
+
+ 
    attributes: {
     
     name:{type:'string',required:true},

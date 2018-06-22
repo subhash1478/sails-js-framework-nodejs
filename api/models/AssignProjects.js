@@ -1,6 +1,7 @@
 module.exports = {
 
- 
+  schema: true,
+ datastores:'default',
   tableName: 'vms_assign_projects_to_employee',
    attributes: {
  

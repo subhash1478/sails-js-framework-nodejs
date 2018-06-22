@@ -26,7 +26,6 @@ module.exports = function (req, res, next) {
       if (err) return ResponseService.json(401, res, "Invalid Token!");
       req.token = token;
       console.log(decoded);
-      
       EmployeeMaster.findOne({id: decoded.employee_id})
 
       .then(function(user){

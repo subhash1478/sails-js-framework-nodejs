@@ -43,6 +43,7 @@ module.exports.routes = {
   'GET /api/get-internal-file': 'InternalFileController.getInternalFile',
   'POST /api/upload-document': 'ConsultantFileController.uploadDocument',
    
+  'GET /api/get-email-list': 'EmployeeMasterController.emailList',
 
   // 'GET /api/city': 'CitiesController.getCity',
   // 'POST /api/addcity': 'CitiesController.addCity',
